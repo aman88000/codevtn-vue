@@ -1,15 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Vhtml />
+  <VBind /> -->
+  <ClassVue />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+// import Vhtml from './components/Vhtml.vue'
+// import VBind from './components/VBind.vue'
+import ClassVue from './components/ClassVue.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld,
+    // Vhtml,
+    // VBind,
+    ClassVue
+
   }
 }
 </script>
