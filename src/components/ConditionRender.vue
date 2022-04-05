@@ -10,6 +10,8 @@
         <h2>Deep</h2>
         <h2>Singh</h2>
     </template>
+
+    <h2 v-show="showElement">Using v-show</h2>
 </template>
 <script>
 
@@ -18,7 +20,8 @@ export default {
    data(){
        return {
            num : 5,
-           display: true
+           display: true,
+           showElement: false,
        }
    }
 }

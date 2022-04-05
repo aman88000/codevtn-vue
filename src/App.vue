@@ -3,7 +3,9 @@
   <Vhtml />
   <VBind /> -->
   <!-- <ClassVue /> -->
-  <ConditionRender />
+  <!-- <ConditionRender /> -->
+  <!-- <ListRenderVFor /> -->
+  <ConditionalListRender />
 </template>
 
 <script>
@@ -11,7 +13,9 @@
 // import Vhtml from './components/Vhtml.vue'
 // import VBind from './components/VBind.vue'
 // import ClassVue from './components/ClassVue.vue'
-import ConditionRender from './components/ConditionRender.vue'
+// import ConditionRender from './components/ConditionRender.vue'
+// import ListRenderVFor from './components/ListRenderVFor.vue'
+import ConditionalListRender from './components/ConditionalListRender.vue'
 
 export default {
   name: 'App',
@@ -20,7 +24,9 @@ export default {
     // Vhtml,
     // VBind,
     // ClassVue,
-    ConditionRender
+    // ConditionRender,
+    // ListRenderVFor,
+    ConditionalListRender,
 
   }
 }
