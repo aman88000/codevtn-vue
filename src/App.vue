@@ -16,7 +16,8 @@
   <!-- <ComputedVue /> -->
   <!-- <ComputedVsMethod /> -->
   <!-- <ComputedWithVFor /> -->
-  <ComputedSetterGetter />
+  <!-- <ComputedSetterGetter /> -->
+  <WatchersVue />
 </template>
 
 <script>
@@ -37,7 +38,8 @@
 // import ComputedVue from './components/ComputedVue.vue'
 // import ComputedVsMethod from './components/ComputedVsMethod.vue'
 // import ComputedWithVFor from './components/ComputedWithVFor.vue'
-import ComputedSetterGetter from './components/ComputedSetterGetter.vue'
+// import ComputedSetterGetter from './components/ComputedSetterGetter.vue'
+import WatchersVue from './components/WatchersVue.vue'
 
 export default {
   name: 'App',
@@ -59,7 +61,8 @@ export default {
     // ComputedVue,
     // ComputedVsMethod,
     // ComputedWithVFor,
-    ComputedSetterGetter,
+    // ComputedSetterGetter,
+    WatchersVue,
 
   }
 }
