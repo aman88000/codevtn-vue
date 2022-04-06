@@ -13,7 +13,8 @@
   <!-- <ModifiersVue /> -->
   <!-- <PreVue /> -->
   <!-- <OnceVue /> -->
-  <ComputedVue />
+  <!-- <ComputedVue /> -->
+  <ComputedVsMethod />
 </template>
 
 <script>
@@ -31,7 +32,8 @@
 // import ModifiersVue from './components/ModifiersVue.vue'
 // import PreVue from './components/PreVue.vue'
 // import OnceVue from './components/OnceVue.vue'
-import ComputedVue from './components/ComputedVue.vue'
+// import ComputedVue from './components/ComputedVue.vue'
+import ComputedVsMethod from './components/ComputedVsMethod.vue'
 
 export default {
   name: 'App',
@@ -50,7 +52,8 @@ export default {
     // ModifiersVue,
     // PreVue,
     // OnceVue,
-    ComputedVue,
+    // ComputedVue,
+    ComputedVsMethod,
 
   }
 }
