@@ -15,7 +15,8 @@
   <!-- <OnceVue /> -->
   <!-- <ComputedVue /> -->
   <!-- <ComputedVsMethod /> -->
-  <ComputedWithVFor />
+  <!-- <ComputedWithVFor /> -->
+  <ComputedSetterGetter />
 </template>
 
 <script>
@@ -35,7 +36,8 @@
 // import OnceVue from './components/OnceVue.vue'
 // import ComputedVue from './components/ComputedVue.vue'
 // import ComputedVsMethod from './components/ComputedVsMethod.vue'
-import ComputedWithVFor from './components/ComputedWithVFor.vue'
+// import ComputedWithVFor from './components/ComputedWithVFor.vue'
+import ComputedSetterGetter from './components/ComputedSetterGetter.vue'
 
 export default {
   name: 'App',
@@ -56,7 +58,8 @@ export default {
     // OnceVue,
     // ComputedVue,
     // ComputedVsMethod,
-    ComputedWithVFor,
+    // ComputedWithVFor,
+    ComputedSetterGetter,
 
   }
 }
