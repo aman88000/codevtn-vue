@@ -14,7 +14,8 @@
   <!-- <PreVue /> -->
   <!-- <OnceVue /> -->
   <!-- <ComputedVue /> -->
-  <ComputedVsMethod />
+  <!-- <ComputedVsMethod /> -->
+  <ComputedWithVFor />
 </template>
 
 <script>
@@ -33,7 +34,8 @@
 // import PreVue from './components/PreVue.vue'
 // import OnceVue from './components/OnceVue.vue'
 // import ComputedVue from './components/ComputedVue.vue'
-import ComputedVsMethod from './components/ComputedVsMethod.vue'
+// import ComputedVsMethod from './components/ComputedVsMethod.vue'
+import ComputedWithVFor from './components/ComputedWithVFor.vue'
 
 export default {
   name: 'App',
@@ -53,7 +55,8 @@ export default {
     // PreVue,
     // OnceVue,
     // ComputedVue,
-    ComputedVsMethod,
+    // ComputedVsMethod,
+    ComputedWithVFor,
 
   }
 }
