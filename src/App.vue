@@ -24,8 +24,11 @@
   <Greet name="Happy" />
   <Greet name="Rahul" /> -->
   <!-- <ArticleVue id="my-article" title="Article Title" :likes="50"  :isPublished ="true" /> -->
-  <h2>App Component also need to take value of username: {{name}}</h2>
-  <ComponentA />
+  <!-- <h2>App Component also need to take value of username: {{name}}</h2>
+  <ComponentA /> -->
+
+  <button @click="showPopup = true">Open Popup</button>
+  <Popup v-show="showPopup" :passFun="closePopup" />
 </template>
 
 <script>
@@ -51,15 +54,11 @@
 // import WatcherImmediateDeep from './components/WatcherImmediateDeep.vue'
 // import Greet from './components/Greet.vue'
 // import ArticleVue from './components/ArticleVue.vue'
-import ComponentA from './components/ComponentA.vue'
+// import ComponentA from './components/ComponentA.vue'
+import Popup from './components/Popup.vue'
 
 export default {
   name: 'App',
-  data(){
-    return{
-      name: 'Aman'
-    }
-  },
   components: {
     // HelloWorld,
     // Vhtml,
@@ -83,8 +82,21 @@ export default {
     // WatcherImmediateDeep,
     // Greet,
     // ArticleVue,
-    ComponentA,
+    // ComponentA,
+    Popup,
 
+  },
+    data(){
+    return{
+      name: 'Aman Deep',
+      showPopup: false
+    }
+  },
+  methods: {
+    closePopup(value){
+      console.log('Child value ', value)
+      this.showPopup = !this.showPopup
+    }
   },
   // if you want to use value in App component also than you can do like that 
   provide(){    
