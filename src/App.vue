@@ -29,7 +29,7 @@
 
   <button @click="showPopup = true">Open Popup</button>
   <!-- <Popup v-show="showPopup" :passFun="closePopup" /> -->
-  <Popup v-show="showPopup" @close="showPopup = false" />
+  <Popup v-show="showPopup" @close="getValuefromCloseEmit" />
 </template>
 
 <script>
@@ -97,12 +97,17 @@ export default {
     closePopup(value){
       console.log('Child value ', value)
       this.showPopup = !this.showPopup
+    },
+    getValuefromCloseEmit(value){
+      console.log('name:',  value)
+       this.showPopup = false
     }
   },
   // if you want to use value in App component also than you can do like that 
   provide(){    
     return{
       userName: this.name
+     
     }
   }
 }
