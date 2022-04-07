@@ -1,5 +1,6 @@
 <template>
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/>
+
   <Vhtml />
   <VBind /> -->
   <!-- <ClassVue /> -->
@@ -17,7 +18,8 @@
   <!-- <ComputedVsMethod /> -->
   <!-- <ComputedWithVFor /> -->
   <!-- <ComputedSetterGetter /> -->
-  <WatchersVue />
+  <!-- <WatchersVue /> -->
+  <WatcherImmediateDeep />
 </template>
 
 <script>
@@ -39,7 +41,8 @@
 // import ComputedVsMethod from './components/ComputedVsMethod.vue'
 // import ComputedWithVFor from './components/ComputedWithVFor.vue'
 // import ComputedSetterGetter from './components/ComputedSetterGetter.vue'
-import WatchersVue from './components/WatchersVue.vue'
+// import WatchersVue from './components/WatchersVue.vue'
+import WatcherImmediateDeep from './components/WatcherImmediateDeep.vue'
 
 export default {
   name: 'App',
@@ -62,7 +65,8 @@ export default {
     // ComputedVsMethod,
     // ComputedWithVFor,
     // ComputedSetterGetter,
-    WatchersVue,
+    // WatchersVue,
+    WatcherImmediateDeep,
 
   }
 }
