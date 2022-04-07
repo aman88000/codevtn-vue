@@ -37,6 +37,18 @@
   <SlotCard>Card Content</SlotCard>
   <SlotCard><h2>Card Content in H2 tags</h2> </SlotCard>
   <SlotCard> <img src="https://picsum.photos/200" /> </SlotCard>
+
+  <SlotCard>
+    <template v-slot:header>
+      <h3>Header Content</h3>
+    </template>
+      <template v-slot:default>
+     <p> Body content  </p>
+    </template>
+     <template v-slot:footer>
+      <h3>Footer content</h3>
+    </template>
+  </SlotCard>
 </template>
 
 <script>

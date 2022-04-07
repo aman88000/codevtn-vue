@@ -1,5 +1,10 @@
 <template>
-    <slot>Default Content</slot> <br />
+   
+
+
+    <slot name="header"></slot> 
+    <slot></slot> 
+    <slot name="footer"></slot> 
 </template>
 
 <script>
