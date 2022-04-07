@@ -23,7 +23,9 @@
   <!-- <Greet name="Aman" />
   <Greet name="Happy" />
   <Greet name="Rahul" /> -->
-  <ArticleVue id="my-article" title="Article Title" :likes="50"  :isPublished ="true" />
+  <!-- <ArticleVue id="my-article" title="Article Title" :likes="50"  :isPublished ="true" /> -->
+  <!-- <h2>App Component also need to take value of username: {{name}}</h2> -->
+  <ComponentA />
 </template>
 
 <script>
@@ -48,10 +50,16 @@
 // import WatchersVue from './components/WatchersVue.vue'
 // import WatcherImmediateDeep from './components/WatcherImmediateDeep.vue'
 // import Greet from './components/Greet.vue'
-import ArticleVue from './components/ArticleVue.vue'
+// import ArticleVue from './components/ArticleVue.vue'
+import ComponentA from './components/ComponentA.vue'
 
 export default {
   name: 'App',
+  // data(){
+  //   return{
+  //     name: 'Aman'
+  //   }
+  // },
   components: {
     // HelloWorld,
     // Vhtml,
@@ -74,8 +82,13 @@ export default {
     // WatchersVue,
     // WatcherImmediateDeep,
     // Greet,
-    ArticleVue,
+    // ArticleVue,
+    ComponentA,
 
+  },
+  // if you dont want to use value in App component also than you can do like that 
+  provide: {    
+    userName: 'aman'
   }
 }
 </script>
