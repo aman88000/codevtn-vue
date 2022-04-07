@@ -32,7 +32,11 @@
   <!-- <Popup v-show="showPopup" :passFun="closePopup" /> -->
   <!-- <Popup v-show="showPopup" @close="getValuefromCloseEmit" /> -->
   
-  <CustomInput v-model="inputValue" />
+  <!-- <CustomInput v-model="inputValue" /> -->
+  <SlotCard> </SlotCard>
+  <SlotCard>Card Content</SlotCard>
+  <SlotCard><h2>Card Content in H2 tags</h2> </SlotCard>
+  <SlotCard> <img src="https://picsum.photos/200" /> </SlotCard>
 </template>
 
 <script>
@@ -60,7 +64,8 @@
 // import ArticleVue from './components/ArticleVue.vue'
 // import ComponentA from './components/ComponentA.vue'
 // import Popup from './components/Popup.vue'
-import CustomInput from './components/CustomInput.vue'
+// import CustomInput from './components/CustomInput.vue'
+import SlotCard from './components/SlotCard.vue'
 
 export default {
   name: 'App',
@@ -89,7 +94,8 @@ export default {
     // ArticleVue,
     // ComponentA,
     // Popup,
-    CustomInput,
+    // CustomInput,
+    SlotCard,
 
   },
     data(){
