@@ -19,7 +19,10 @@
   <!-- <ComputedWithVFor /> -->
   <!-- <ComputedSetterGetter /> -->
   <!-- <WatchersVue /> -->
-  <WatcherImmediateDeep />
+  <!-- <WatcherImmediateDeep /> -->
+  <Greet name="Aman" />
+  <Greet name="Happy" />
+  <Greet name="Rahul" />
 </template>
 
 <script>
@@ -42,7 +45,8 @@
 // import ComputedWithVFor from './components/ComputedWithVFor.vue'
 // import ComputedSetterGetter from './components/ComputedSetterGetter.vue'
 // import WatchersVue from './components/WatchersVue.vue'
-import WatcherImmediateDeep from './components/WatcherImmediateDeep.vue'
+// import WatcherImmediateDeep from './components/WatcherImmediateDeep.vue'
+import Greet from './components/Greet.vue'
 
 export default {
   name: 'App',
@@ -66,7 +70,8 @@ export default {
     // ComputedWithVFor,
     // ComputedSetterGetter,
     // WatchersVue,
-    WatcherImmediateDeep,
+    // WatcherImmediateDeep,
+    Greet,
 
   }
 }
