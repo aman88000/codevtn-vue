@@ -24,7 +24,7 @@
   <Greet name="Happy" />
   <Greet name="Rahul" /> -->
   <!-- <ArticleVue id="my-article" title="Article Title" :likes="50"  :isPublished ="true" /> -->
-  <!-- <h2>App Component also need to take value of username: {{name}}</h2> -->
+  <h2>App Component also need to take value of username: {{name}}</h2>
   <ComponentA />
 </template>
 
@@ -55,11 +55,11 @@ import ComponentA from './components/ComponentA.vue'
 
 export default {
   name: 'App',
-  // data(){
-  //   return{
-  //     name: 'Aman'
-  //   }
-  // },
+  data(){
+    return{
+      name: 'Aman'
+    }
+  },
   components: {
     // HelloWorld,
     // Vhtml,
@@ -86,9 +86,11 @@ export default {
     ComponentA,
 
   },
-  // if you dont want to use value in App component also than you can do like that 
-  provide: {    
-    userName: 'aman'
+  // if you want to use value in App component also than you can do like that 
+  provide(){    
+    return{
+      userName: this.name
+    }
   }
 }
 </script>
