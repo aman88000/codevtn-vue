@@ -23,7 +23,7 @@
   <!-- <Greet name="Aman" />
   <Greet name="Happy" />
   <Greet name="Rahul" /> -->
-  <ArticleVue title="Article Title" :likes="50"  :isPublished ="true" />
+  <ArticleVue id="my-article" title="Article Title" :likes="50"  :isPublished ="true" />
 </template>
 
 <script>
