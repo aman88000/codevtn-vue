@@ -28,7 +28,8 @@
   <ComponentA /> -->
 
   <button @click="showPopup = true">Open Popup</button>
-  <Popup v-show="showPopup" :passFun="closePopup" />
+  <!-- <Popup v-show="showPopup" :passFun="closePopup" /> -->
+  <Popup v-show="showPopup" @close="showPopup = false" />
 </template>
 
 <script>
