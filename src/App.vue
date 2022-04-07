@@ -33,7 +33,9 @@
   <!-- <Popup v-show="showPopup" @close="getValuefromCloseEmit" /> -->
   
   <!-- <CustomInput v-model="inputValue" /> -->
-  <SlotCard> </SlotCard>
+
+
+  <!-- <SlotCard> </SlotCard>
   <SlotCard>Card Content</SlotCard>
   <SlotCard><h2>Card Content in H2 tags</h2> </SlotCard>
   <SlotCard> <img src="https://picsum.photos/200" /> </SlotCard>
@@ -48,7 +50,26 @@
      <template v-slot:footer>
       <h3>Footer content</h3>
     </template>
-  </SlotCard>
+  </SlotCard> -->
+
+
+  <SlotProp>
+    <template v-slot:default = SlotProps >
+      {{SlotProps.firstName}} {{SlotProps.lastName}}
+    </template>
+  </SlotProp>
+<hr />
+  <SlotProp>
+    <template v-slot:default = SlotProps >
+      {{SlotProps.lastName}}, {{SlotProps.firstName}} 
+    </template>
+  </SlotProp>
+<hr />
+    <SlotProp>
+    <template v-slot:default = SlotProps >
+      {{SlotProps.firstName}} 
+    </template>
+  </SlotProp>
 </template>
 
 <script>
@@ -77,7 +98,8 @@
 // import ComponentA from './components/ComponentA.vue'
 // import Popup from './components/Popup.vue'
 // import CustomInput from './components/CustomInput.vue'
-import SlotCard from './components/SlotCard.vue'
+// import SlotCard from './components/SlotCard.vue'
+import SlotProp from './components/SlotProps.vue'
 
 export default {
   name: 'App',
@@ -107,7 +129,8 @@ export default {
     // ComponentA,
     // Popup,
     // CustomInput,
-    SlotCard,
+    // SlotCard,
+    SlotProp,
 
   },
     data(){
