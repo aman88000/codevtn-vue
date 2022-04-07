@@ -20,9 +20,10 @@
   <!-- <ComputedSetterGetter /> -->
   <!-- <WatchersVue /> -->
   <!-- <WatcherImmediateDeep /> -->
-  <Greet name="Aman" />
+  <!-- <Greet name="Aman" />
   <Greet name="Happy" />
-  <Greet name="Rahul" />
+  <Greet name="Rahul" /> -->
+  <ArticleVue title="Article Title" :likes="50"  :isPublished ="true" />
 </template>
 
 <script>
@@ -46,7 +47,8 @@
 // import ComputedSetterGetter from './components/ComputedSetterGetter.vue'
 // import WatchersVue from './components/WatchersVue.vue'
 // import WatcherImmediateDeep from './components/WatcherImmediateDeep.vue'
-import Greet from './components/Greet.vue'
+// import Greet from './components/Greet.vue'
+import ArticleVue from './components/ArticleVue.vue'
 
 export default {
   name: 'App',
@@ -71,7 +73,8 @@ export default {
     // ComputedSetterGetter,
     // WatchersVue,
     // WatcherImmediateDeep,
-    Greet,
+    // Greet,
+    ArticleVue,
 
   }
 }
