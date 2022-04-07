@@ -53,7 +53,7 @@
   </SlotCard> -->
 
 
-  <SlotProp>
+  <!-- <SlotProp>
     <template v-slot:default = SlotProps >
       {{SlotProps.firstName}} {{SlotProps.lastName}}
     </template>
@@ -69,7 +69,10 @@
     <template v-slot:default = SlotProps >
       {{SlotProps.firstName}} 
     </template>
-  </SlotProp>
+  </SlotProp> -->
+
+
+  <DynamicComponent />
 </template>
 
 <script>
@@ -99,7 +102,8 @@
 // import Popup from './components/Popup.vue'
 // import CustomInput from './components/CustomInput.vue'
 // import SlotCard from './components/SlotCard.vue'
-import SlotProp from './components/SlotProps.vue'
+// import SlotProp from './components/SlotProps.vue'
+import DynamicComponent from './components/DynamicComponent.vue'
 
 export default {
   name: 'App',
@@ -130,7 +134,8 @@ export default {
     // Popup,
     // CustomInput,
     // SlotCard,
-    SlotProp,
+    // SlotProp,
+    DynamicComponent,
 
   },
     data(){
