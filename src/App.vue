@@ -27,9 +27,12 @@
   <!-- <h2>App Component also need to take value of username: {{name}}</h2>
   <ComponentA /> -->
 
-  <button @click="showPopup = true">Open Popup</button>
+
+  <!-- <button @click="showPopup = true">Open Popup</button> -->
   <!-- <Popup v-show="showPopup" :passFun="closePopup" /> -->
-  <Popup v-show="showPopup" @close="getValuefromCloseEmit" />
+  <!-- <Popup v-show="showPopup" @close="getValuefromCloseEmit" /> -->
+  
+  <CustomInput v-model="inputValue" />
 </template>
 
 <script>
@@ -56,7 +59,8 @@
 // import Greet from './components/Greet.vue'
 // import ArticleVue from './components/ArticleVue.vue'
 // import ComponentA from './components/ComponentA.vue'
-import Popup from './components/Popup.vue'
+// import Popup from './components/Popup.vue'
+import CustomInput from './components/CustomInput.vue'
 
 export default {
   name: 'App',
@@ -84,13 +88,15 @@ export default {
     // Greet,
     // ArticleVue,
     // ComponentA,
-    Popup,
+    // Popup,
+    CustomInput,
 
   },
     data(){
     return{
       name: 'Aman Deep',
-      showPopup: false
+      showPopup: false,
+      inputValue : ''
     }
   },
   methods: {
