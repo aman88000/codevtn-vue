@@ -72,7 +72,11 @@
   </SlotProp> -->
 
 
-  <DynamicComponent />
+  <!-- <DynamicComponent /> -->
+
+  <teleport to="#portal-root">
+  <TeleportVue />
+  </teleport>
 </template>
 
 <script>
@@ -103,7 +107,8 @@
 // import CustomInput from './components/CustomInput.vue'
 // import SlotCard from './components/SlotCard.vue'
 // import SlotProp from './components/SlotProps.vue'
-import DynamicComponent from './components/DynamicComponent.vue'
+// import DynamicComponent from './components/DynamicComponent.vue'
+import TeleportVue from './components/TeleportVue.vue'
 
 export default {
   name: 'App',
@@ -135,7 +140,8 @@ export default {
     // CustomInput,
     // SlotCard,
     // SlotProp,
-    DynamicComponent,
+    // DynamicComponent,
+    TeleportVue,
 
   },
     data(){
