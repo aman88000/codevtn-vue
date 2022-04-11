@@ -81,7 +81,11 @@
 
   <!-- <PostHTTP /> -->
   <!-- <GetDataOnPageLoad /> -->
-  <TemplateRefs/>
+
+  <!-- <TemplateRefs/> -->
+
+  <CounterClick />
+  <HoverCounter />
 </template>
 
 <script>
@@ -117,7 +121,9 @@
 // import GetHTTP from './components/GetHTTP.vue'
 // import PostHTTP from './components/PostHTTP.vue'
 // import GetDataOnPageLoad from './components/GetDataOnPageLoad.vue'
-import TemplateRefs from './components/TemplateRefs.vue'
+// import TemplateRefs from './components/TemplateRefs.vue'
+import CounterClick from './components/CounterClick.vue'
+import HoverCounter from './components/HoverCounter.vue'
 
 export default {
   name: 'App',
@@ -154,7 +160,9 @@ export default {
     // GetHTTP,
     // PostHTTP,
     // GetDataOnPageLoad,
-    TemplateRefs
+    // TemplateRefs,
+    CounterClick,
+    HoverCounter
 
   },
     data(){
