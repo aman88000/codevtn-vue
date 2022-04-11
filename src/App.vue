@@ -77,7 +77,9 @@
   <!-- <teleport to="#portal-root">
   <TeleportVue />
   </teleport> -->
-  <GetHTTP />
+  <!-- <GetHTTP /> -->
+
+  <PostHTTP />
 </template>
 
 <script>
@@ -110,7 +112,8 @@
 // import SlotProp from './components/SlotProps.vue'
 // import DynamicComponent from './components/DynamicComponent.vue'
 // import TeleportVue from './components/TeleportVue.vue'
-import GetHTTP from './components/GetHTTP.vue'
+// import GetHTTP from './components/GetHTTP.vue'
+import PostHTTP from './components/PostHTTP.vue'
 
 export default {
   name: 'App',
@@ -144,7 +147,8 @@ export default {
     // SlotProp,
     // DynamicComponent,
     // TeleportVue,
-    GetHTTP,
+    // GetHTTP,
+    PostHTTP,
 
   },
     data(){
