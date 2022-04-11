@@ -80,7 +80,8 @@
   <!-- <GetHTTP /> -->
 
   <!-- <PostHTTP /> -->
-  <GetDataOnPageLoad />
+  <!-- <GetDataOnPageLoad /> -->
+  <TemplateRefs/>
 </template>
 
 <script>
@@ -115,7 +116,8 @@
 // import TeleportVue from './components/TeleportVue.vue'
 // import GetHTTP from './components/GetHTTP.vue'
 // import PostHTTP from './components/PostHTTP.vue'
-import GetDataOnPageLoad from './components/GetDataOnPageLoad.vue'
+// import GetDataOnPageLoad from './components/GetDataOnPageLoad.vue'
+import TemplateRefs from './components/TemplateRefs.vue'
 
 export default {
   name: 'App',
@@ -151,7 +153,8 @@ export default {
     // TeleportVue,
     // GetHTTP,
     // PostHTTP,
-    GetDataOnPageLoad
+    // GetDataOnPageLoad,
+    TemplateRefs
 
   },
     data(){
