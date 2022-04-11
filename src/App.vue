@@ -74,9 +74,10 @@
 
   <!-- <DynamicComponent /> -->
 
-  <teleport to="#portal-root">
+  <!-- <teleport to="#portal-root">
   <TeleportVue />
-  </teleport>
+  </teleport> -->
+  <GetHTTP />
 </template>
 
 <script>
@@ -108,7 +109,8 @@
 // import SlotCard from './components/SlotCard.vue'
 // import SlotProp from './components/SlotProps.vue'
 // import DynamicComponent from './components/DynamicComponent.vue'
-import TeleportVue from './components/TeleportVue.vue'
+// import TeleportVue from './components/TeleportVue.vue'
+import GetHTTP from './components/GetHTTP.vue'
 
 export default {
   name: 'App',
@@ -141,7 +143,8 @@ export default {
     // SlotCard,
     // SlotProp,
     // DynamicComponent,
-    TeleportVue,
+    // TeleportVue,
+    GetHTTP,
 
   },
     data(){
