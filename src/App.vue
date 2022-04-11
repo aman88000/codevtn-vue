@@ -79,7 +79,8 @@
   </teleport> -->
   <!-- <GetHTTP /> -->
 
-  <PostHTTP />
+  <!-- <PostHTTP /> -->
+  <GetDataOnPageLoad />
 </template>
 
 <script>
@@ -113,7 +114,8 @@
 // import DynamicComponent from './components/DynamicComponent.vue'
 // import TeleportVue from './components/TeleportVue.vue'
 // import GetHTTP from './components/GetHTTP.vue'
-import PostHTTP from './components/PostHTTP.vue'
+// import PostHTTP from './components/PostHTTP.vue'
+import GetDataOnPageLoad from './components/GetDataOnPageLoad.vue'
 
 export default {
   name: 'App',
@@ -148,7 +150,8 @@ export default {
     // DynamicComponent,
     // TeleportVue,
     // GetHTTP,
-    PostHTTP,
+    // PostHTTP,
+    GetDataOnPageLoad
 
   },
     data(){
