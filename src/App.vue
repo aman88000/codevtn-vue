@@ -87,7 +87,8 @@
   <!-- <CounterClick />
   <HoverCounter /> -->
   <!-- <CompositionAPI01 /> -->
-  <CompositionReactive />
+  <!-- <CompositionReactive /> -->
+  <CompositionToRefs />
 </template>
 
 <script>
@@ -127,7 +128,8 @@
 // import CounterClick from './components/CounterClick.vue'
 // import HoverCounter from './components/HoverCounter.vue'
 // import CompositionAPI01 from './components/CompositionAPI01.vue'
-import CompositionReactive from './components/CompositionReactive.vue'
+// import CompositionReactive from './components/CompositionReactive.vue'
+import CompositionToRefs from './components/CompositionToRefs.vue'
 
 export default {
   name: 'App',
@@ -168,7 +170,8 @@ export default {
     // CounterClick,
     // HoverCounter,
     // CompositionAPI01,
-    CompositionReactive,
+    // CompositionReactive,
+    CompositionToRefs,
 
   },
     data(){
