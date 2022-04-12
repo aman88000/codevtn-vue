@@ -84,8 +84,9 @@
 
   <!-- <TemplateRefs/> -->
 
-  <CounterClick />
-  <HoverCounter />
+  <!-- <CounterClick />
+  <HoverCounter /> -->
+  <CompositionAPI01 />
 </template>
 
 <script>
@@ -122,8 +123,9 @@
 // import PostHTTP from './components/PostHTTP.vue'
 // import GetDataOnPageLoad from './components/GetDataOnPageLoad.vue'
 // import TemplateRefs from './components/TemplateRefs.vue'
-import CounterClick from './components/CounterClick.vue'
-import HoverCounter from './components/HoverCounter.vue'
+// import CounterClick from './components/CounterClick.vue'
+// import HoverCounter from './components/HoverCounter.vue'
+import CompositionAPI01 from './components/CompositionAPI01.vue'
 
 export default {
   name: 'App',
@@ -161,8 +163,9 @@ export default {
     // PostHTTP,
     // GetDataOnPageLoad,
     // TemplateRefs,
-    CounterClick,
-    HoverCounter
+    // CounterClick,
+    // HoverCounter,
+    CompositionAPI01
 
   },
     data(){
