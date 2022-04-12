@@ -88,7 +88,8 @@
   <HoverCounter /> -->
   <!-- <CompositionAPI01 /> -->
   <!-- <CompositionReactive /> -->
-  <CompositionToRefs />
+  <!-- <CompositionToRefs /> -->
+  <CompositionMethods />
 </template>
 
 <script>
@@ -129,7 +130,8 @@
 // import HoverCounter from './components/HoverCounter.vue'
 // import CompositionAPI01 from './components/CompositionAPI01.vue'
 // import CompositionReactive from './components/CompositionReactive.vue'
-import CompositionToRefs from './components/CompositionToRefs.vue'
+// import CompositionToRefs from './components/CompositionToRefs.vue'
+import CompositionMethods from './components/CompositionMethods.vue'
 
 export default {
   name: 'App',
@@ -171,7 +173,8 @@ export default {
     // HoverCounter,
     // CompositionAPI01,
     // CompositionReactive,
-    CompositionToRefs,
+    // CompositionToRefs,
+    CompositionMethods,
 
   },
     data(){
