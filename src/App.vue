@@ -89,7 +89,9 @@
   <!-- <CompositionAPI01 /> -->
   <!-- <CompositionReactive /> -->
   <!-- <CompositionToRefs /> -->
-  <CompositionMethods />
+  <!-- <CompositionMethods /> -->
+  <!-- <CompositionVModel /> -->
+  <CompositionComputed />
 </template>
 
 <script>
@@ -131,7 +133,9 @@
 // import CompositionAPI01 from './components/CompositionAPI01.vue'
 // import CompositionReactive from './components/CompositionReactive.vue'
 // import CompositionToRefs from './components/CompositionToRefs.vue'
-import CompositionMethods from './components/CompositionMethods.vue'
+// import CompositionMethods from './components/CompositionMethods.vue'
+// import CompositionVModel from './components/CompositionVModel.vue'
+import CompositionComputed from './components/CompositionComputed.vue'
 
 export default {
   name: 'App',
@@ -174,7 +178,9 @@ export default {
     // CompositionAPI01,
     // CompositionReactive,
     // CompositionToRefs,
-    CompositionMethods,
+    // CompositionMethods,
+    // CompositionVModel,
+    CompositionComputed
 
   },
     data(){
