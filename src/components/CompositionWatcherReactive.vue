@@ -6,6 +6,9 @@
     <input type="text" placeholder="First Name" v-model="firstName" />
     <input type="text" placeholder="Last Name" v-model="lastName" />
 
+  
+    <input type="text" placeholder="deep clone" v-model="options.optionFirstName" />
+
 </div>
 </template>
 
@@ -14,12 +17,16 @@ import {
     reactive, toRefs,
     watch
 } from 'vue'
+import _ from 'lodash'
 export default {
     name: 'CompositionWatcherReactive',
     setup() {
         const state = reactive({
             firstName: '',
-            lastName: ''
+            lastName: '',
+            options: {
+                optionFirstName: ''
+            }
         })
 
         // watch(()=>{
@@ -34,10 +41,13 @@ export default {
         // )
 
 
-         watch(()=>state.firstName, (newValue, oldValue) => {
+         watch(()=> _.cloneDeep(state.options), (newValue, oldValue) => {
             console.log('React newValue firstname', newValue);
             console.log('Reactive oldValue firstName', oldValue);
         },
+        {
+            deep: true
+        }
         )
 
         return {
