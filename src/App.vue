@@ -91,7 +91,8 @@
   <!-- <CompositionToRefs /> -->
   <!-- <CompositionMethods /> -->
   <!-- <CompositionVModel /> -->
-  <CompositionComputed />
+  <!-- <CompositionComputed /> -->
+  <CompositionWatcherRef />
 </template>
 
 <script>
@@ -135,7 +136,8 @@
 // import CompositionToRefs from './components/CompositionToRefs.vue'
 // import CompositionMethods from './components/CompositionMethods.vue'
 // import CompositionVModel from './components/CompositionVModel.vue'
-import CompositionComputed from './components/CompositionComputed.vue'
+// import CompositionComputed from './components/CompositionComputed.vue'
+import CompositionWatcherRef from './components/CompositionWatcherRef.vue'
 
 export default {
   name: 'App',
@@ -180,7 +182,8 @@ export default {
     // CompositionToRefs,
     // CompositionMethods,
     // CompositionVModel,
-    CompositionComputed
+    // CompositionComputed,
+    CompositionWatcherRef,
 
   },
     data(){
