@@ -22,23 +22,23 @@ export default {
             lastName: ''
         })
 
-        watch(()=>{
-            return {...state}
-        }, (newValues, oldValues) => {
-            console.log('React newValue firstname', newValues.firstName);
-            console.log('Reactive newValue lastname', newValues.lastName)
-
-            console.log('Reactive oldValue firstName', oldValues.firstName);
-            console.log('Reactive oldValue lastName', oldValues.lastName)
-        },
-        )
-
-
-        //  watch(()=>state.firstName, (newValues, oldValues) => {
+        // watch(()=>{
+        //     return {...state}
+        // }, (newValues, oldValues) => {
         //     console.log('React newValue firstname', newValues.firstName);
+        //     console.log('Reactive newValue lastname', newValues.lastName)
+
         //     console.log('Reactive oldValue firstName', oldValues.firstName);
+        //     console.log('Reactive oldValue lastName', oldValues.lastName)
         // },
         // )
+
+
+         watch(()=>state.firstName, (newValue, oldValue) => {
+            console.log('React newValue firstname', newValue);
+            console.log('Reactive oldValue firstName', oldValue);
+        },
+        )
 
         return {
             ...toRefs(state)
