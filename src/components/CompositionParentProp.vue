@@ -3,7 +3,7 @@
         <h2>Composition Parent props send to child </h2>
         <input type="text" placeholder="First Name" v-model="firstName" /> <br /><br />
         <input type="text" placeholder="Last Name" v-model="lastName" />
-        <CompositionChildProp :firstName="firstName" :lastName="lastName" />
+        <CompositionChildProp :firstName="firstName" :lastName="lastName" @callHero="callHero" />
 
     </div>
 </template>
@@ -19,9 +19,14 @@ import {ref } from 'vue'
         setup(){
             const firstName = ref('')
             const lastName = ref('')
+
+            function callHero(fullNamedata){
+                alert(fullNamedata)
+            }
             return {
                 firstName,
-                lastName
+                lastName,
+                callHero
             }
         }
     }
