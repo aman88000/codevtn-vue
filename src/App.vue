@@ -93,7 +93,8 @@
   <!-- <CompositionVModel /> -->
   <!-- <CompositionComputed /> -->
   <!-- <CompositionWatcherRef /> -->
-  <CompositionWatcherReactive />
+  <!-- <CompositionWatcherReactive /> -->
+  <CompositionProvideInject />
 </template>
 
 <script>
@@ -139,7 +140,8 @@
 // import CompositionVModel from './components/CompositionVModel.vue'
 // import CompositionComputed from './components/CompositionComputed.vue'
 // import CompositionWatcherRef from './components/CompositionWatcherRef.vue'
-import CompositionWatcherReactive from './components/CompositionWatcherReactive.vue'
+// import CompositionWatcherReactive from './components/CompositionWatcherReactive.vue'
+import CompositionProvideInject from './components/CompositionProvideInject.vue'
 
 export default {
   name: 'App',
@@ -186,7 +188,8 @@ export default {
     // CompositionVModel,
     // CompositionComputed,
     // CompositionWatcherRef,
-    CompositionWatcherReactive,
+    // CompositionWatcherReactive,
+    CompositionProvideInject,
 
   },
     data(){
