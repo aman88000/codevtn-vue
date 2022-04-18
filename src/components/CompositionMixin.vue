@@ -14,7 +14,7 @@ import useCounter from '../composables/useCounter'
         // mixins: [CounterMixin]
 
         setup(){
-            const {count, incrementCounter} = useCounter()
+            const {count, incrementCounter} = useCounter(1, 5)
 
             return {
                 count, 

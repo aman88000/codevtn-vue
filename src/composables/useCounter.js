@@ -1,9 +1,9 @@
 import { ref } from "vue";
-export default function useCounter() {
-  const count = ref(0);
+export default function useCounter(initialValue = 0, setIncrementPoint = 1) {
+  const count = ref(initialValue);
 
   function incrementCounter() {
-    count.value += 1;
+    count.value += setIncrementPoint;
   }
 
   return {
