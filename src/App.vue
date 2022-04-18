@@ -96,7 +96,8 @@
   <!-- <CompositionWatcherReactive /> -->
   <!-- <CompositionProvideInject /> -->
   <!-- <CompositionTemplateRef /> -->
-  <CompositionParentProp />
+  <!-- <CompositionParentProp /> -->
+  <CompositionMixin />
 </template>
 
 <script>
@@ -145,7 +146,8 @@
 // import CompositionWatcherReactive from './components/CompositionWatcherReactive.vue'
 // import CompositionProvideInject from './components/CompositionProvideInject.vue'
 // import CompositionTemplateRef from './components/CompositionTemplateRef.vue'
-import CompositionParentProp from './components/CompositionParentProp.vue'
+// import CompositionParentProp from './components/CompositionParentProp.vue'
+import CompositionMixin from './components/CompositionMixin.vue'
 
 export default {
   name: 'App',
@@ -195,7 +197,8 @@ export default {
     // CompositionWatcherReactive,
     // CompositionProvideInject,
     // CompositionTemplateRef,
-    CompositionParentProp,
+    // CompositionParentProp,
+    CompositionMixin,
 
   },
     data(){
