@@ -95,7 +95,8 @@
   <!-- <CompositionWatcherRef /> -->
   <!-- <CompositionWatcherReactive /> -->
   <!-- <CompositionProvideInject /> -->
-  <CompositionTemplateRef />
+  <!-- <CompositionTemplateRef /> -->
+  <CompositionParentProp />
 </template>
 
 <script>
@@ -143,7 +144,8 @@
 // import CompositionWatcherRef from './components/CompositionWatcherRef.vue'
 // import CompositionWatcherReactive from './components/CompositionWatcherReactive.vue'
 // import CompositionProvideInject from './components/CompositionProvideInject.vue'
-import CompositionTemplateRef from './components/CompositionTemplateRef.vue'
+// import CompositionTemplateRef from './components/CompositionTemplateRef.vue'
+import CompositionParentProp from './components/CompositionParentProp.vue'
 
 export default {
   name: 'App',
@@ -192,7 +194,8 @@ export default {
     // CompositionWatcherRef,
     // CompositionWatcherReactive,
     // CompositionProvideInject,
-    CompositionTemplateRef,
+    // CompositionTemplateRef,
+    CompositionParentProp,
 
   },
     data(){
